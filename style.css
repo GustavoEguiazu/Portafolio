@@ -1,0 +1,592 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion__foto{
+    border-radius: 50%;
+}
+
+.redes{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi__texto{
+    background-color: var(--color-de-fondo-menu);
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+/* Estilos para la sección de habilidades */
+.habilidades {
+    padding: 20px;
+    background-color: #f0f0f0; /* Puedes personalizar el color */
+  }
+  
+  .habilidades__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .habilidades__lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0;
+    list-style: none;
+  }
+  
+  .habilidades__elemento {
+    flex: 1 1 calc(25% - 40px); /* 4 columnas en pantallas grandes */
+    max-width: calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .habilidades__icono {
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .habilidades__nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Ajuste para pantallas medianas */
+  @media (max-width: 768px) {
+    .habilidades__elemento {
+      flex: 1 1 calc(50% - 40px); /* 2 columnas en pantallas medianas */
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 480px) {
+    .habilidades__elemento {
+      flex: 1 1 100%; /* 1 columna en pantallas pequeñas */
+      max-width: 100%;
+    }
+  }
+  
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+/* Estilos para la sección de aficiones */
+.aficiones {
+    padding: 20px;
+    background-color: #e0f7fa; /* Puedes personalizar el color */
+  }
+  
+  .aficiones__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .aficiones__lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0;
+    list-style: none;
+  }
+  
+  .aficiones__elemento {
+    flex: 1 1 calc(25% - 40px); /* 4 columnas en pantallas grandes */
+    max-width: calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aficiones__icono {
+    width: 32px;  /* Ancho fijo */
+    height: 37px; /* Alto fijo */
+    margin-bottom: 10px;
+  }
+  
+  .aficiones__nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Ajuste para pantallas medianas */
+  @media (max-width: 768px) {
+    .aficiones__elemento {
+      flex: 1 1 calc(50% - 40px); /* 2 columnas en pantallas medianas */
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 480px) {
+    .aficiones__elemento {
+      flex: 1 1 100%; /* 1 columna en pantallas pequeñas */
+      max-width: 100%;
+    }
+  }
+  
+
+/*------------------------------ Sección de Formación --------------------------------*/
+/* Estilos para la sección de formación académica */
+.formacion {
+  padding: 20px;
+  background-color: #f5f5f5; /* Puedes personalizar el color */
+}
+
+.formacion__titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.formacion__lista {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+  justify-content: center;
+  gap: 20px; /* Espacio entre los elementos */
+  padding: 0;
+  list-style: none;
+}
+
+.formacion__elemento {
+  flex: 1 1 calc(25% - 40px); /* 3 columnas en pantallas grandes */
+  max-width: calc(25% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formacion__icono {
+  width: 84px;  /* Ancho fijo */
+  height: 58px; /* Alto fijo */
+}
+
+.formacion__nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.formacion__detalle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 768px) {
+  .formacion__elemento {
+    flex: 1 1 calc(50% - 40px); /* 2 columnas en pantallas medianas */
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 480px) {
+  .formacion__elemento {
+    flex: 1 1 100%; /* 1 columna en pantallas pequeñas */
+    max-width: 100%;
+  }
+}
+
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+/* Estilos para la sección de experiencia profesional */
+.proyectos {
+  padding: 20px;
+  background-color: #f9f9f9; /* Puedes personalizar el color */
+}
+
+.proyectos__titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.proyectos__contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+  justify-content: center;
+  gap: 20px; /* Espacio entre los elementos */
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  max-width: 600px; /* Puedes ajustar el ancho máximo */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.proyectos__icono {
+  width: 296px;  /* Ancho fijo */
+  height: 144px; /* Alto fijo */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.proyectos__nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.proyectos__descripcion {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Estilos para los botones */
+.proyectos__botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los botones */
+  margin-top: 20px;
+}
+
+.proyectos__boton {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.proyectos__boton:hover {
+  background-color: #0056b3;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 480px) {
+  .proyectos__contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyectos__botones {
+    flex-direction: column; /* Los botones estarán uno debajo del otro en pantallas pequeñas */
+  }
+
+  .proyectos__boton {
+    width: 100%; /* Botones ocuparán todo el ancho */
+    text-align: center;
+  }
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+/* Estilos para la sección de contacto */
+.contacto {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  text-align: center;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contacto__descripcion {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contacto__formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Los campos se apilan verticalmente */
+  gap: 15px; /* Espacio entre los campos */
+}
+
+.contacto__campo {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contacto__campo:focus {
+  border-color: #007bff; /* Color de borde al enfocar el campo */
+}
+
+.contacto__campo--textarea {
+  height: 150px; /* Altura personalizada para el textarea */
+  resize: vertical; /* Permitir que el usuario ajuste la altura */
+}
+
+.contacto__boton {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .contacto {
+    padding: 20px 10px;
+  }
+
+  .contacto__formulario {
+    width: 100%;
+  }
+}
+
+
+
+/*------------------------------ Sección de Footer ---------------------------------*/
+/* Estilos para el footer */
+footer {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que los elementos se ajusten en pantallas pequeñas */
+}
+
+footer img.footer {
+  width: 32px;  /* Ancho de la imagen */
+  height: 32px; /* Alto de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+footer img.e {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+footer a {
+  color: #00aced; /* Color del enlace (LinkedIn) */
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 480px) {
+  footer p {
+    flex-direction: column; /* Elementos en columna en pantallas pequeñas */
+  }
+
+  footer img.footer,
+  footer img.e {
+    margin: 10px 0;
+  }
+}
+
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    /* Estilos para la sección de presentación */
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinea el texto a la izquierda y la imagen a la derecha */
+  padding: 40px;
+  background-color: #f9f9f9; /* Fondo claro */
+}
+
+.presentacion__foto {
+  width: 300px; /* Ajusta el tamaño de la foto */
+  height: auto;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  order: 2; /* Mueve la imagen al final para alinearla a la derecha */
+}
+
+.presentacion__contenedor {
+  max-width: 600px; /* Limita el ancho del contenedor de texto */
+  order: 1; /* Mantiene el contenedor de texto a la izquierda */
+}
+
+.presentacion__titulo {
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+}
+
+.presentacion__subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.redes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.redes__img a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.redes__img img {
+  margin-left: 10px;
+  width: 20px;
+  height: auto;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column-reverse; /* En pantallas pequeñas, imagen abajo, texto arriba */
+    text-align: center;
+  }
+
+  .presentacion__foto {
+    margin-bottom: 20px;
+  }
+
+  .presentacion__contenedor {
+    max-width: 100%;
+  }
+}
+
+
+  
